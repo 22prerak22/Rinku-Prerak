@@ -1,4 +1,5 @@
 var btn = document.getElementById("heartTxt");
+let audio = document.getElementById("my_audio");
 btn.style.opacity = 0;
 var btnVal = 0;
 
@@ -28,6 +29,7 @@ function play() {
     setInterval(showImage, 2500);
   }
   t++;
+  audio.play();
 }
 
 function preshowImage() {
